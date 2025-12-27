@@ -1,4 +1,37 @@
-# Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-AWS
+# 🩺 MedRAG  
+## Medical Retrieval-Augmented Generation Chatbot
+**MedRAG** is an end-to-end **medical question-answering system** built using **Retrieval-Augmented Generation (RAG)**.  
+It combines Large Language Models (LLMs) with a vector database to generate **context-aware, document-grounded medical responses**, reducing hallucinations and improving reliability.
+
+This project demonstrates a complete GenAI pipeline: **document ingestion → embeddings → vector search → LLM → web application → cloud deployment**.
+
+---
+
+## ✨ Features
+
+- 📄 Medical PDF ingestion and text chunking  
+- 🔍 Semantic search using vector embeddings  
+- 🧠 Context-grounded responses with LLMs  
+- 🌐 Interactive chat interface using Flask  
+- 🐳 Dockerized and AWS deployment ready  
+- 🔐 Secure API key handling via environment variables  
+
+---
+
+## 🏗️ Architecture Overview
+
+```text
+Medical PDF
+   ↓
+Text Chunking & Embeddings
+   ↓
+Pinecone Vector Database
+   ↓
+Retriever (LangChain)
+   ↓
+LLM (GPT)
+   ↓
+Flask Web Application
 
 # How to run?
 ### STEPS:
@@ -6,7 +39,8 @@
 Clone the repository
 
 ```bash
-git clonehttps://github.com/entbappy/Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-AWS.git
+git clone https://github.com/soulthidapo/medrag.git
+cd medrag
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
